@@ -18,3 +18,5 @@ router.get("/", function(request, response) {
 // router.post("/api/burgers", function(request, response) {
 //    burger.create();
 // });
+
+module.exports = router;

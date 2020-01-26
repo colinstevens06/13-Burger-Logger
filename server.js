@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // connect handlebars
-app.engine("handlebrs", expressHandlebars({ defaultLayout: "main" }));
+app.engine("handlebars", expressHandlebars({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Import routes into the server

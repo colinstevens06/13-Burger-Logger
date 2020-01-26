@@ -16,7 +16,7 @@ connection.connect(function(err) {
       console.error("error connecting: " + err.stack);
       return;
    }
-   console.log("\nconnected as ID " + connection.threatId + "\n");
+   console.log("\nconnected as ID " + connection.threadId + "\n");
 });
 
 module.exports = connection;
