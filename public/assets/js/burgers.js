@@ -34,11 +34,6 @@ $(function() {
          eaten: newBurger
       };
 
-      console.log("click heard. data here:");
-      console.log(id);
-      console.log(newBurger);
-      console.log(newBurgerState);
-
       // send the PUT request
       $.ajax("/api/burgers/" + id, {
          type: "PUT",
@@ -49,5 +44,16 @@ $(function() {
       });
    });
 
-   //end of the 'wait to load' opening function
-});
+   // *********************************
+   // clicking the 'eat now' button
+   $(".delete-burger").on("click", function(event) {
+      let id = $(this).data("id");
+
+      $.ajax("api/burgers" + id, {
+         type: "DELETE"
+      }).then(function() {
+         console.log("deleted burger", id);
+         location.reload();
+      });
+   });
+}); //end of the 'wait to load' opening function
