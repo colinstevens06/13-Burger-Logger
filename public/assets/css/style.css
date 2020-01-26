@@ -23,3 +23,9 @@ form {
 label {
    font-size: 1.5rem;
 }
+
+/* ============================== RESULTS ============================== */
+ul {
+   list-style-type: none;
+   padding-inline-start: 0;
+}
