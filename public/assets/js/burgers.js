@@ -24,5 +24,30 @@ $(function() {
       });
    });
 
+   // *********************************
+   // clicking the 'eat now' button
+   $(".eat-burger").on("click", function(event) {
+      let id = $(this).data("id");
+      let newBurger = $(this).data("burger");
+
+      let newBurgerState = {
+         eaten: newBurger
+      };
+
+      console.log("click heard. data here:");
+      console.log(id);
+      console.log(newBurger);
+      console.log(newBurgerState);
+
+      // send the PUT request
+      $.ajax("/api/burgers/" + id, {
+         type: "PUT",
+         data: newBurgerState
+      }).then(function() {
+         console.log("changed eated to", newBurger);
+         location.reload();
+      });
+   });
+
    //end of the 'wait to load' opening function
 });

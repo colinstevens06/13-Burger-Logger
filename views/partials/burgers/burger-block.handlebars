@@ -1,9 +1,9 @@
 <li>
    <h3>{{ burgerName }}</h3>
    <p>{{ burgerToppings }}</p>
-   {{#if eat}}
-   <button class="eat-burger" data-id="{{ id }}" data-burger="{{eat}}">Eat Now!</button>
+   {{#if eaten}}
+   <button class="eat-burger btn btn-secondary" data-id="{{ id }}" data-burger="{{eaten}}">Eat Now!</button>
    {{/if}}
-   <button class="delete-burger"></button>
+   <button class="delete-burger btn btn-danger">Delete</button>
 
 </li>
