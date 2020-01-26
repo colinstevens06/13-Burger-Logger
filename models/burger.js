@@ -15,6 +15,11 @@ const burger = {
       orm.update("burgers", objColVals, condition, function(response) {
          callback(response);
       });
+   },
+   delete: function(condition, callback) {
+      orm.delete("burgers", condition, function(response) {
+         callback(response);
+      });
    }
 };
 
