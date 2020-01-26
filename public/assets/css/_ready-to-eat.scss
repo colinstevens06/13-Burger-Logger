@@ -1,0 +1,14 @@
+/* ============================== RESULTS ============================== */
+$backgroundColor: #f7f7f7;
+
+ul {
+   list-style-type: none;
+   padding-inline-start: 0;
+}
+
+li {
+   border: 1px solid #757575;
+   border-radius: 5px;
+   background-color: $backgroundColor;
+   padding: 24px 26px;
+}

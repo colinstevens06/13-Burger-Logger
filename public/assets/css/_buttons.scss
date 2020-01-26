@@ -1,0 +1,39 @@
+/* ============================== BUTTONS ============================== */
+
+.btn-primary {
+   background-color: $primaryColor;
+   border-color: $primaryColor;
+   width: 200px;
+   font-size: 1.25rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+
+   &:hover {
+      background-color: white;
+      color: $primaryColor;
+      border-color: $primaryColor;
+   }
+}
+
+.btn-secondary {
+   background-color: $secondaryColor;
+   border-color: $secondaryColor;
+
+   &:hover {
+      background-color: white;
+      color: $secondaryColor;
+      border-color: $secondaryColor;
+   }
+}
+
+.btn-danger {
+   background-color: $dangerColor;
+   border-color: $dangerColor;
+
+   &:hover {
+      background-color: white;
+      color: $dangerColor;
+      border-color: $dangerColor;
+   }
+}

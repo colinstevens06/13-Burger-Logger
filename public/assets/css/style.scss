@@ -1,0 +1,21 @@
+$primaryColor: hotpink;
+$secondaryColor: orange;
+$dangerColor: #dd3f3f;
+
+html,
+body {
+   margin: 0;
+   background-color: $primaryColor;
+}
+
+.container {
+   background-color: white;
+}
+
+.fa-hamburger {
+   font-size: 150px;
+}
+
+@import "./form";
+@import "./buttons";
+@import "./ready-to-eat";

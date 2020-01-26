@@ -1,31 +1,78 @@
 html,
 body {
-   margin: 0;
-   background-color: hotpink;
+  margin: 0;
+  background-color: hotpink;
 }
 
 .container {
-   background-color: white;
+  background-color: white;
 }
 
 .fa-hamburger {
-   font-size: 150px;
+  font-size: 150px;
 }
 
 /* ============================== FORM ============================== */
-
 form {
-   width: 80%;
-   margin-left: auto;
-   margin-right: auto;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 label {
-   font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* ============================== BUTTONS ============================== */
+.btn-primary {
+  background-color: hotpink;
+  border-color: hotpink;
+  width: 200px;
+  font-size: 1.25rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: hotpink;
+  border-color: hotpink;
+}
+
+.btn-secondary {
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: orange;
+  border-color: orange;
+}
+
+.btn-danger {
+  background-color: #dd3f3f;
+  border-color: #dd3f3f;
+}
+
+.btn-danger:hover {
+  background-color: white;
+  color: #dd3f3f;
+  border-color: #dd3f3f;
 }
 
 /* ============================== RESULTS ============================== */
 ul {
-   list-style-type: none;
-   padding-inline-start: 0;
+  list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
+
+li {
+  border: 1px solid #757575;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  padding: 24px 26px;
+}
+/*# sourceMappingURL=style.css.map */
