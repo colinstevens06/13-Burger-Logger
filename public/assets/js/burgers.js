@@ -4,6 +4,7 @@ $(function() {
    // clicking the create burger button
    $(".create-burger").on("click", function(event) {
       event.preventDefault();
+      console.log("create button clicked");
 
       const newBurger = {
          burgerName: $("#burgerName")
