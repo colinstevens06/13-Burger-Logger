@@ -55,8 +55,18 @@ router.put("/api/burgers/:id", function(request, response) {
    );
 });
 
-// router.post("/api/burgers", function(request, response) {
-//    burger.create();
-// });
+router.delete("/api/burgers/:id", function(request, response) {
+   let condition = "id = " + request.params.id;
+
+   console.log("condition", condition);
+
+   burger.delete(condition, function(result) {
+      if (result.affectedRows == 0) {
+         return response.status(404).end();
+      } else {
+         response.status(200).end();
+      }
+   });
+});
 
 module.exports = router;
