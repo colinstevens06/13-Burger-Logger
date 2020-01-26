@@ -6,7 +6,15 @@ const router = express.Router();
 const burger = require("../models/burger");
 
 router.get("/", function(request, response) {
-   response.render("index", "PLACEHOLDER");
+   burger.all(function(data) {
+      let burgersObject = {
+         burgers: data
+      };
+      console.log(burgersObject);
+      response.render("index", burgersObject);
+   });
 });
 
-router.post("/api/burgers", function(request, response) {});
+// router.post("/api/burgers", function(request, response) {
+//    burger.create();
+// });
